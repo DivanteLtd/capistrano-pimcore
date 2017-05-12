@@ -1,8 +1,6 @@
 # Capistrano::Pimcore
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/capistrano/pimcore`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Pimcore plugin for capistrano
 
 ## Installation
 
@@ -22,12 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-Pimcore env 
+### How work with Pimcore environments
+
+Default environment is `development` if you need change Pimcore environment add param env, exapmle:
+
 ```bash
 bundle exec cap test pimcore:cache:clear env=production
 ```
-
-TODO: write mora about default env and places where env can be setted
 
 ## Development
 
@@ -37,4 +36,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/capistrano-pimcore.
+Bug reports and pull requests are welcome on GitHub at https://github.com/DivanteLtd/capistrano-pimcore.
