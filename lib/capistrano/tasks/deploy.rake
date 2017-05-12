@@ -1,4 +1,4 @@
-include Capistrano::Magento2::Helpers
+include Capistrano::Pimcore::Helpers
 
 namespace :deploy do
   task :updated do

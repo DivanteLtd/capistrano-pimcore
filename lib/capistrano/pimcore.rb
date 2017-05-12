@@ -15,6 +15,9 @@ end
 
 load File.expand_path('../tasks/pimcore.rake', __FILE__)
 
+# Core tasks for deploying pimcore
+load File.expand_path("../tasks/deploy.rake", __FILE__)
+
 namespace :load do
   task :defaults do
     load 'capistrano/pimcore/defaults.rb'
