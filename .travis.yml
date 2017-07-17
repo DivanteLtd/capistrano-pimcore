@@ -2,4 +2,8 @@ sudo: false
 language: ruby
 rvm:
   - 2.1.4
-before_install: gem install bundler -v 1.13.6
+before_install: 
+  - gem install bundler -v 1.13.6
+  - bundler install
+script: 
+  - bundle exec rubocop 
